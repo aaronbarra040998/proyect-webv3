@@ -1,0 +1,156 @@
+@font-face {
+    font-family: 'Futura';
+    src: local('Futura Bold'), local('Futura-Bold'),
+        url('FuturaLT-Bold.woff2') format('woff2'),
+        url('FuturaLT-Bold.woff') format('woff'),
+        url('FuturaLT-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+.noveno {
+    font-family: 'Futura', sans-serif;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.titulo {
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+    margin-top: 5%;
+    transition: transform 0.3s ease;
+}
+
+.titulo h1 {
+    font-size: 50px;
+    color: white;
+    margin: 0;
+}
+
+.titulo img {
+    width: 100px;
+    margin-left: 30px;
+}
+
+.titulo:hover {
+    transform: scale(1.1);
+}
+
+.conteiner {
+    display: flex; /* Creamos un nuevo conteiner para dividir la página en dos */
+    justify-content: center;
+    width: 100%;
+    margin-top: 50px;
+    color: white; /*color de todo el conteiner*/
+}
+
+.left,
+.right {
+    width: 50%;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+}
+
+.left {
+    margin-right: 10px;
+    margin-left: 15%; /* Agregamos un margen izquierdo para alejar la imagen de la izquierda */
+    display: flex;
+    flex-direction: column; /* Alineamos los elementos verticalmente */
+    align-items: flex-start; /* Alineamos los elementos a la izquierda */
+}
+
+.left .content {
+    margin-bottom: 20px; /* Agregamos espacio entre los contenidos */
+    display: flex; /* Utilizamos flexbox para alinear el texto y la imagen horizontalmente */
+    flex-direction: row; /* Alineamos los elementos en fila */
+    align-items: center; /* Centramos los elementos verticalmente */
+    transition: transform 0.3s ease; /* Añadimos la transición para la animación */
+}
+
+.left .content:hover {
+    transform: scale(1.1); /* Escalamos el contenido al pasar el cursor por encima */
+}
+
+.left img {
+    width: 80px;
+    margin-right: 10px;
+}
+
+.right form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: white;
+    margin-left: 10%;
+}
+
+.right form label {
+    font-weight: bold;
+}
+
+.right form input {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Estilos para el botón de enviar */
+.right form button {
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 25%; /* Agregamos esta línea para centrar el botón */
+    display: block; /* Agregamos esta línea para asegurar que ocupe todo el ancho disponible */
+    width: 30%;
+}
+
+.right form button:hover {
+    background-color: blue;
+}
+
+.right form .input-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.right form .input-group label {
+    flex-basis: 30%; /* Establece el ancho deseado para las etiquetas */
+    text-align: right; /* Alinea las etiquetas a la derecha */
+    margin-right: 10px;
+}
+
+.right form .input-group input {
+    flex-basis: 65%; /* Establece el ancho deseado para los campos de entrada */
+}
+.mensaje-section input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  .mensaje-section input #mensaje{
+    height: 40px;
+  }
